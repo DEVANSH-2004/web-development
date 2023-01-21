@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(246, 245, 241);
+    height: 10vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    /* box-shadow: green; */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+}
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+.nav-list ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-list ul li{
+    margin:4vh 100px;
+    cursor: pointer;
+}
+.imag{
+    margin: 0 80px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.c-us{
+    margin:4vh 15px 4vh 200px;
+    cursor: pointer;
+}
+.offer{
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    /* border: 1px solid blue; */
+    background-color: azure;
+    animation-name: offer-ani;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    /* animation-play-state:running ; */
+    animation-delay: 1s;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Fuzzy Bubbles', cursive;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+@keyframes offer-ani {
+    from{
+        height: 0;
+        width: 0;
+    }
+    to{
+        height: 4vh;
+        width: 100vw;
+    }
+}
+.offer:hover{
+    font-weight: bolder;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    /* letter-spacing: 5px; */
+}
+.nav-list ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    font-weight: bolder;
+}
+.c-us:hover{
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    font-weight: bolder;
+}
+/* .imag:focus{
+    width: 70px;
+
+
+} */
+.r8-rvs{
+    margin-top: 1vh;
+    cursor: pointer;
+}
+.c-r8{
+    margin-top: 3vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.r8-rvs:hover{
+    font-weight: bolder;
+}
+.c-r8:hover{
+    font-weight: bolder;
+}
+/* main{
+    height: 200vh;
+} */
+.pbar{
+    /* height: 3vh;
+    width: 100vh; */
+    background-color: red;
+    animation-name: pbar-ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes pbar-ani{
+    0%{
+        height: 0;
+        width: 0;
+    }
+    50%{
+        height: 0.4vh;
+        width: 40vw;
+    }
+    100%{
+        height: 0.4vh;
+        width: 100vw;
+    }
+}
+/* .slider-box{
+    margin: auto;
+} */
+main{
+    height: 270vh;
+    width: 100vw;
+}
+.main-carousel{
+    height: 50vh;
+    width: 90vw;
+    margin-top: 5vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+/* .carousel img{
+    height: 28vh;
+    width: 100vw;
+} */
+.carousel-cell img{
+    border-radius: 20px;
+}
+.consult{
+    background-color: rgb(246, 245, 241);
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
+    /* position: relative; */
+    overflow: hidden;
+}
+.write{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    height: 100%;
+    width: 35%;
+    /* align-items: center; */
+    justify-content: flex-start;
+    
+}
+.up{
+    font-family: 'DM Sans', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow :25%; ;
+    padding-bottom: 3vh;
+
+
+}
+
+.between{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: x-large;
+    padding-bottom: 3vh;
+}
+.between1{
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    padding-bottom: 7vh;
+
+}
+.bttn1 button{
+    background-color: rgb(103, 37, 244);
+    color: rgb(246, 245, 241);
+    height: 7vh;
+    width: 75%;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    cursor: pointer;
+}
+.bttn1 button:hover{
+    width: 81%;
+    height: 9vh;
+    /* transform-origin: center; */
+}
+.pic1{
+    padding-left: 25vw;
+    
+}
+.pic1 img{
+    border-radius: 5px;
+}
+.line1{
+    width: 90vw;
+    margin: auto;
+    margin-top: 12vh;
+}
+.line2{
+    width: 90vw;
+    margin: auto;
+}
+.str-nm{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+
+}
+
+.small-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: burlywood;
+    background-image: url('https://thumbs.dreamstime.com/b/image-wooden-table-front-abstract-blurred-window-light-background-96891736.jpg');
+}
+
+.biggest-box{
+    border: 2px solid brown;
+    border-radius: 5px;
+    width: 95vw;
+    /* background-color: burlywood; */
+    background-color: rgb(231, 245, 251);
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/606/80/969/light-background-color-wallpaper-preview.jpg'); */
+    text-align: center;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 40px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
+    
+}
+
+.big-box{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 93vw;
+    /* background-color:navajowhite; */
+    /* background-image: url('https://thumbs.dreamstime.com/b/winter-seasonal-bokeh-background-blue-bokeh-light-backgrounds-blue-bubble-background-abstract-blurred-reflection-lighting-blue-142485852.jpg'); */
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/606/80/969/light-background-color-wallpaper-preview.jpg'); */
+    background-color: whitesmoke;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
+
+}
+.tbox{
+    font-size: x-large;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) ;
+    text-align: center;
+    border-radius: 10px;
+}
+.tbox:hover{
+    font-size: xx-large;
+}
+
+.image img{
+    border-radius: 20px;
+    border: 4px solid brown;
+    cursor: pointer;
+}
+.image img:hover{
+width: 210px;
+}
+
+.name{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.name:hover{
+    font-size:larger;
+}
+
+.price{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.price:hover{
+    font-weight: bolder;
+    font-size:larger;
+}
+
+.desp{
+    font-family: 'Indie Flower', cursive;
+    cursor: pointer;
+}
+
+/* .lines5{
+    width: 95vw;
+    margin: auto;
+    margin-top: 30px;
+} */
+
+/* .addn-links{
+    background-color: rgb(28, 28, 28);
+    color:white;
+    margin-top: 25px;
+    padding-top: 25px;
+    /* padding-bottom: 5px; */
+    
+/* } */ 
+
+/* .nm{
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left:50px ;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+} */
+
+.line3{
+    width: 95vw;
+    background-color: white;
+    border: 0.3px solid white;
+    margin: auto;
+}
+.below{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: left;
+    font-family: 'Chilanka', cursive;
+}
+.b1{
+    display: flex;
+    flex-direction: row;
+    /* margin-right: 10vw; */
+    cursor: pointer;
+
+}
+.b2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40vw;
+    cursor: pointer;
+}
+.written2:hover,
+.written3:hover,
+.written4:hover,
+.written5:hover{
+    font-weight: bolder;
+}
+
+.written3,
+.written4{
+    margin-right: 3vw;
+}
+.imag7 img:hover{
+    width: 35px;
+}
+
+.addn-links{
+    background-color: rgb(28, 28, 28);
+    color:white;
+    margin-top: 25px;
+    padding-top: 25px;
+    /* padding-bottom: 5px; */
+    height: 51vh;
+    
+}
+
+.nm{
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left:50px ;
+    margin-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.addn-links ul{
+    padding: 50px;
+    padding-top: 30px;
+    cursor: pointer;
+    list-style: square;
+    font-family: 'Raleway', sans-serif;
+}
+.addn-links ul li{
+    padding: 2px;
+    letter-spacing: 1px;
+}
+
+.addn-links ul li:hover{
+    font-weight: bolder;
+}
+
+
+.lines4{
+    width: 95vw;
+    margin: auto;
+    margin-top: 5px;
+}
+
